@@ -1,0 +1,64 @@
+.checkmark {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 375px ;
+}
+
+.title {
+    position: fixed;
+    font-family: "Sen";
+    text-align: center;
+    margin-bottom: 125px;
+    width: 397px;
+}
+
+.body {
+    position: fixed;
+    width: 274px;
+    font-family: "Hind";
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    line-height: 1;
+    margin-top: 16px;
+}
+
+.button {
+    position: fixed;
+    border: none;
+    bottom: 0;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    width: 223px;
+    height: 48px;
+    font-family: "HindSemiBold";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 250px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
