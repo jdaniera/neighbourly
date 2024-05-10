@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from './SavedButton.module.css'
 import { useEffect, useState } from "react"
 
@@ -10,14 +9,6 @@ export default function SavedButton({ prompt }) {
 
     const sendPrompt = (e, prompt) => {
         console.log("Sending prompt:", prompt)
-    }
-
-    const toggleSaved = () => {
-        sendPrompt(prompt);
-        setSaved(!saved);
-        console.log("saved", saved);
-        addToSaved(); // call saveItems function when saved button is clicked
-        console.log("button clicked"); // check if button click works
     }
 
     const addToSaved = () => {
@@ -39,6 +30,14 @@ export default function SavedButton({ prompt }) {
         }
     }
 
+    const toggleSaved = () => {
+        sendPrompt(prompt);
+        setSaved(!saved);
+        console.log("saved", saved);
+        addToSaved(); // call saveItems function when saved button is clicked
+        console.log("button clicked"); // check if button click works
+    }
+
     return(
         <>
             <button
@@ -50,13 +49,13 @@ export default function SavedButton({ prompt }) {
                 }}
             >
                 {saved ? (
-                   <Image 
+                   <img
                     src="/images/classesFeaturedCard/heartIconFilled.svg" 
                     width={16.7} 
                     height={15.5} 
                     alt="Heart Icon" /> )
                 : (
-                    <Image 
+                    <img
                         src="/images/classesFeaturedCard/heartIcon.svg" 
                         width={16.7} 
                         height={15.5} 
